@@ -1,0 +1,251 @@
+.first-section {
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    clip-path: ellipse(108% 100% at 65.08% 0%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.column1 {
+    background-image: url("./imagenes/home_fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    position: relative;
+}
+
+.column2 {
+    background-color: #58879ba2;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 20px;
+    color: white;
+}
+
+.column2 > div > h3 {
+    font-size: 1.6rem;
+}
+
+.column2 > div > p {
+    font-size: 1.1rem;
+}
+
+.column2 > ul > li > h4 {
+    font-size: 1.4rem;
+}
+
+.column2 > ul > li > p {
+    font-size: 1.1rem;
+}
+
+.c1-text {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c1-text > p {
+    font-size: 1.2rem;
+}
+
+.column2 > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.second {
+    margin-top: 100vh;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.col2 {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    line-height: 1.6rem;
+}
+
+.col2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 3.5rem;
+    color: var(--dark-blue);
+}
+
+.btn-ir {
+    text-decoration: none;
+    padding: 10px;
+    color:var(--dark-blue);
+    border: var(--dark-blue) 1px solid;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.btn-ir:hover{
+    background-color: var(--dark-blue);
+    border: #000 1px solid;
+    color:#fff;
+}
+
+@media only screen and (max-width: 835px) {
+    .row2 {
+        flex-direction: column;
+    }
+}
+
+.third {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third .parrafo-thrid{
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.parrafo-thrid .notas{
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 30%);
+    position: relative;
+    background: var(--light-blue);
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.notas hr{
+    width: 90%;
+    margin: 10px;
+    border: none;
+    height: 1px;
+    background: #000;
+}
+
+.parrafo-thrid .nota1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+}
+
+.parrafo-thrid .nota2{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.parrafo-thrid .nota3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 0 10px 0 0;
+}
+
+.third lottie-player{
+    width: 50%;
+    min-height: 400px;
+    min-width: 400px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .third {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .column2 {
+        gap: 5px;
+
+    }
+    .column2>* {
+        transform: scale(0.7);
+    }
+}
+
+/*.n1 .fa-paperclip{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    font-size: 50px;
+    color: rgb(192, 192, 192);
+}
+
+.n2 .fa-paperclip{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 50px;
+    color: rgb(47, 78, 255);
+}
+
+.n3 .fa-paperclip{
+    transform: rotate(-50deg);
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    font-size: 50px;
+    color: rgba(136, 37, 248, 0.8);
+}*/
+
+footer {
+    margin-top: 80px;
+}

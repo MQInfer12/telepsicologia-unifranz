@@ -1,0 +1,167 @@
+.first-section {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.fondo {
+    width: 60%;
+    display: flex;
+    background-image: url("./imagenes/info_fondo.jpg");
+    clip-path: ellipse(111% 100% at -11% 0%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.fondo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+}
+
+.fondo-text > p {
+    font-size: 1.2rem;
+}
+
+.fondo-text > p > span {
+    font-weight: 600;
+    color: var(--dark-orange);
+}
+
+.info1 {
+    padding: 50px;
+    width: 40%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info1 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.info1 > div > h3 {
+    font-size: 1.4rem;
+    color: var(--main-orange);
+    text-align: right;
+}
+
+.info1 > div > p {
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .info1 {
+        gap: 30px;
+    }
+    
+    .info1 > div {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    .info1 > div > h3 {
+        text-align: center;
+    }
+}
+
+.second {
+    margin-top: 10vh;
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.second > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 33%;
+}
+
+.second > div > h3 {
+    font-size: 1.4rem;
+    color: var(--main-orange);
+}
+
+.second > div > p {
+    font-size: 1.1rem;
+}
+
+.second > div:first-child {
+    align-self: flex-end;
+}
+
+.second > div:last-child {
+    align-self: flex-start;
+}
+
+.third {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+.register-psico {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.fondo2 {
+    width: 60%;
+    background-image: url("./imagenes/info_fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: ellipse(114% 100% at 114% 100%);
+}
+
+.btn-register {
+    text-decoration: none;
+    padding: 15px;
+    color:var(--main-orange);
+    border: var(--main-orange) 1px solid;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.btn-register:hover{
+    background-color: var(--main-orange);
+    border: #000 1px solid;
+    color:#fff;
+}
+
+@media only screen and (max-width: 1100px) {
+    .second{
+        flex-direction: column;
+        transform: scale(0.9);
+    }
+}
